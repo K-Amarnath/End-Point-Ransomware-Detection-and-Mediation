@@ -6,9 +6,11 @@ Then details how to set up a mail server for a phishing attack using the Kamater
 
 Setting Up a Mail Server for Phishing attack – 
 On the Kamatera cloud platform, an SMTP mail server was configured for the "zero.xyz" domain. The actions were as follows:
-Step 1: Purchasing and configuring a domain
+
+* Step 1: Purchasing and configuring a domain
 The 'zero.xyz' domain was first ordered from Namecheap, and the DNS records were set up to direct visitors to our mail server.
-Step 2: Installing the Kamatera Cloud Platform
+
+* Step 2: Installing the Kamatera Cloud Platform
 On the Kamatera cloud computing platform, we made an account and set up a server with the following settings: ‘zero.xyz' as the hostname, 2A CPU, 4096MB of memory, and a 20GB disk 1 are all specifications for the Ubuntu 20.04.5 LTS operating system.
 Step 3: Install iRedMail
 We downloaded the installation script from the iRedMail website and ran it with sudo rights on our freshly installed Ubuntu Server 20.04.1.
