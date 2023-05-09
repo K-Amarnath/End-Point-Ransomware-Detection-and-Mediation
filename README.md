@@ -36,7 +36,10 @@ For the purpose of identifying and troubleshooting any configuration issues that
 
 The Project also discusses reverse shell attacks, where the attacker gains access to the victim's computer system and sends commands to it from a distance. In this attack, a backdoor is built on the victim's computer system by the attacker, who then uses it to connect to a remote server. The article then explains how to perform a reverse shell attack using Python programming language.
 
-
+Running the reverse shell Attack 
+```bash
+python3 reverse_shell.py
+```
 
 Finally, the project talks about generating keys using the RSA algorithm, which is one of the most commonly used public-key cryptographic algorithms. The RSA algorithm is based on the mathematical tenet that it is simple to multiply two large prime numbers together, but very difficult to factor the product back into its original primes. The article explains how the algorithm is more secure the larger the key size, and it is more challenging for an attacker to factorize the keys. The article concludes that cryptography is a critical tool in ensuring secure data transmission and must be implemented correctly to protect sensitive information from cyber attacks.
 
