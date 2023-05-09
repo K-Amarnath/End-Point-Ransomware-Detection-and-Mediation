@@ -44,3 +44,18 @@ Generating Keys using `Rsa` Algorithm
 
 ```bash
 python3 generate_keys.py
+```
+
+Encrypting the files
+
+``` bash
+python3 encrypt_file.py
+```
+
+Decrypting the file
+
+```bash
+python3 decrypt_file.py
+```
+
+With this the attack is complete
