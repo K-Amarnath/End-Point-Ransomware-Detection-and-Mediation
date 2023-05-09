@@ -1,0 +1,25 @@
+Phishing – 
+Phishing is a type of cyberattack in which a perpetrator poses as a trustworthy organization in order to trick a victim into disclosing sensitive data, such as login credentials, credit card information, or personal information. A typical attack method involves the attacker sending an email, text message, or instant message that appears to be from a reputable source, like a bank, social media platform, or government organization.
+The attacker creates an email that appears to be from a trustworthy source in a typical phishing attack. To get the victim to click on a link, the attacker may use a variety of tactics, including feigning urgency, fear, or curiosity. For instance, in this instance, the attacker made a false claim about a flash sale that was only valid for two hours on the website Temu to entice the victim to click on the link right away.
+Setting Up a Mail Server for Phishing attack – 
+On the Kamatera cloud platform, an SMTP mail server was configured for the "zero.xyz" domain. The actions were as follows:
+Step 1: Purchasing and configuring a domain
+The 'zero.xyz' domain was first ordered from Namecheap, and the DNS records were set up to direct visitors to our mail server.
+Step 2: Installing the Kamatera Cloud Platform
+On the Kamatera cloud computing platform, we made an account and set up a server with the following settings: ‘zero.xyz' as the hostname, 2A CPU, 4096MB of memory, and a 20GB disk 1 are all specifications for the Ubuntu 20.04.5 LTS operating system.
+Step 3: Install iRedMail
+We downloaded the installation script from the iRedMail website and ran it with sudo rights on our freshly installed Ubuntu Server 20.04.1.
+Step 4: Configuring iRedMail
+After the installation, we went to http:// 83.225.9.90/iredadmin to the iRedMail web interface and configured our email domain and administrator account.
+Step 5: Configuring the SMTP Server
+Next, we set up DNS records like MX records, configured firewall rules to permit incoming traffic to the server, and checked that the SMTP server was listening on the appropriate ports to configure the SMTP server to accept incoming emails from the internet.
+Step 6: Configure Outgoing Email Routing
+Then, in order to prevent our outgoing emails from being marked as spam, we set up SPF and DKIM records on the SMTP server, configured the routing and relaying settings, and configured the SMTP server to route outgoing emails to their intended recipients.
+Step 7: Implementing Security Measures
+We set up security measures like firewall rules and TLS encryption to prevent the server from being accessed by unauthorized users and to guarantee the privacy of email communication. For these uses, we employed the Let's Encrypt SSL/TLS certificates and the Ubuntu UFW firewall.
+
+Step 8: Configuring Mail Policies
+To better manage our email accounts and lower the amount of spam or unwanted email that our users receive, we used iRedMail to set up mail policies like spam filters, email forwarding, and mailbox quotas.
+
+Step 9: Testing the server
+For the purpose of identifying and troubleshooting any configuration issues that might be keeping our server from operating properly, we tested the server by sending and receiving emails to and from other email addresses.
